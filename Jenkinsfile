@@ -20,7 +20,7 @@ pipeline {
         echo 'package maven app'
         echo 'adding new line'
         sh 'mvn package -DskipTests'
-        archiveArtifacts '*/*.war'
+        archiveArtifacts 'target/*.war'
       }
     }
 
